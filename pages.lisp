@@ -1,19 +1,31 @@
 (in-package #:parenworks)
 
-;;; Home Page
-(define-page home "parenworks/" (:clip "home.ctml")
+;;; Home Page - accessible at root and /parenworks/
+(define-page home "/" (:clip "home.ctml")
+  (r-clip:process T))
+
+(define-page home-alt "parenworks/" (:clip "home.ctml")
   (r-clip:process T))
 
 ;;; About Page
-(define-page about "parenworks/about" (:clip "about.ctml")
+(define-page about "/about" (:clip "about.ctml")
+  (r-clip:process T))
+
+(define-page about-alt "parenworks/about" (:clip "about.ctml")
   (r-clip:process T))
 
 ;;; Services Page
-(define-page services "parenworks/services" (:clip "services.ctml")
+(define-page services "/services" (:clip "services.ctml")
+  (r-clip:process T))
+
+(define-page services-alt "parenworks/services" (:clip "services.ctml")
   (r-clip:process T))
 
 ;;; Contact Page
-(define-page contact "parenworks/contact" (:clip "contact.ctml")
+(define-page contact "/contact" (:clip "contact.ctml")
+  (r-clip:process T))
+
+(define-page contact-alt "parenworks/contact" (:clip "contact.ctml")
   (r-clip:process T))
 
 ;;; Contact Form API Endpoint
