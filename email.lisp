@@ -46,3 +46,6 @@
         (body (format nil "New contact form submission:~%~%Name: ~A~%Email: ~A~%~%Message:~%~A"
                       name email message)))
     (send-email *contact-email* subject body)))
+
+;; Load API key when this file is loaded
+(load-resend-api-key)

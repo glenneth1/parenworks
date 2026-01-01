@@ -33,4 +33,4 @@
 
 (compile-stylesheets)
 (compile-scripts)
-(load-resend-api-key)
+;; load-resend-api-key is called from email.lisp after it's defined
