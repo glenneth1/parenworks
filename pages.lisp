@@ -32,12 +32,12 @@
      "{\"status\":\"success\",\"message\":\"Thank you for your message! I'll get back to you soon.\"}"))))
 
 ;;; Route to make the site accessible at parenworks.systems
-;;; Radiance parses parenworks.systems as domains ("systems" "parenworks")
-;;; We need to map this to the parenworks module subdomain
+;;; When parenworks.systems is in the :domains config, Radiance recognizes it
+;;; and domains will be NIL. We need to map this to the parenworks module subdomain.
 (define-route parenworks-domain :mapping (uri) ()
+  ;; Always route to parenworks module when domains is empty or already parenworks
   (when (or (null (domains uri))
-            (equal '("systems" "parenworks") (domains uri))
-            (equal '("parenworks") (domains uri)))
+            (equal '("systems" "parenworks") (domains uri)))
     (setf (domains uri) '("parenworks")))
   uri)
 
