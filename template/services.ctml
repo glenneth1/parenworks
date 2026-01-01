@@ -27,78 +27,44 @@
     
     <main>
       <section class="page-header">
-        <h1>Our Services</h1>
-        <p class="page-subtitle">Comprehensive Common Lisp solutions for modern challenges</p>
+        <h1>Services</h1>
+        <p class="page-subtitle">Boutique Common Lisp development for unique projects</p>
       </section>
 
       <section class="services-content">
         <div class="service-card featured">
           <div class="service-header">
-            <span class="service-icon">🏗️</span>
-            <h2>Systems Development</h2>
+            <span class="service-icon">✨</span>
+            <h2>Bespoke Solutions</h2>
           </div>
           <p>
-            Full-stack systems development using Common Lisp. From embedded systems to 
-            distributed architectures, we build robust, scalable solutions that stand the test of time.
+            Every project is different. I take on a limited number of projects at a time, 
+            giving each one the focused attention it deserves. If you have an interesting 
+            problem that could benefit from Common Lisp's unique strengths, let's talk.
           </p>
-          <ul class="service-features">
-            <li>Custom application development</li>
-            <li>Legacy system modernisation</li>
-            <li>High-performance computing solutions</li>
-            <li>Real-time systems</li>
-          </ul>
         </div>
 
         <div class="services-grid">
-          <div class="service-card">
-            <div class="service-header">
-              <span class="service-icon">🤖</span>
-              <h3>AI &amp; Machine Learning</h3>
-            </div>
-            <p>
-              Leverage Lisp's heritage as the original AI language. We build intelligent 
-              systems, expert systems, and machine learning pipelines that deliver real results.
-            </p>
-            <ul class="service-features">
-              <li>Expert systems development</li>
-              <li>Natural language processing</li>
-              <li>Symbolic AI solutions</li>
-              <li>ML pipeline integration</li>
-            </ul>
-          </div>
-
-          <div class="service-card">
-            <div class="service-header">
-              <span class="service-icon">🔧</span>
-              <h3>DSL Development</h3>
-            </div>
-            <p>
-              Domain-Specific Languages that speak your business language. We create 
-              custom languages and compilers that make complex domains accessible.
-            </p>
-            <ul class="service-features">
-              <li>Custom language design</li>
-              <li>Compiler development</li>
-              <li>Code generation tools</li>
-              <li>Configuration languages</li>
-            </ul>
-          </div>
-
           <div class="service-card">
             <div class="service-header">
               <span class="service-icon">🌐</span>
               <h3>Web Applications</h3>
             </div>
             <p>
-              Modern web applications powered by Common Lisp. Fast, secure, and 
-              maintainable web solutions using frameworks like Radiance, Caveman, and Hunchentoot.
+              Custom web applications built with Common Lisp frameworks like Radiance. 
+              Clean, maintainable code that does exactly what you need.
             </p>
-            <ul class="service-features">
-              <li>Full-stack web development</li>
-              <li>REST API design</li>
-              <li>Real-time web applications</li>
-              <li>Web service integration</li>
-            </ul>
+          </div>
+
+          <div class="service-card">
+            <div class="service-header">
+              <span class="service-icon">🔧</span>
+              <h3>Automation &amp; Tools</h3>
+            </div>
+            <p>
+              Custom tools and scripts to automate repetitive tasks or solve specific 
+              problems. Lisp excels at creating elegant solutions to tricky problems.
+            </p>
           </div>
 
           <div class="service-card">
@@ -107,83 +73,54 @@
               <h3>Data Processing</h3>
             </div>
             <p>
-              High-performance data processing and analysis. Transform, analyse, and 
-              extract insights from your data with elegant, efficient Lisp solutions.
+              Transform, analyse, and work with your data. Whether it's parsing unusual 
+              formats or building custom pipelines, Lisp makes data manipulation a joy.
             </p>
-            <ul class="service-features">
-              <li>ETL pipeline development</li>
-              <li>Data transformation</li>
-              <li>Analytics engines</li>
-              <li>Report generation</li>
-            </ul>
           </div>
 
           <div class="service-card">
             <div class="service-header">
-              <span class="service-icon">🎓</span>
-              <h3>Training &amp; Consulting</h3>
+              <span class="service-icon">💡</span>
+              <h3>Prototypes &amp; Experiments</h3>
             </div>
             <p>
-              Empower your team with Common Lisp expertise. We offer training programmes 
-              and consulting services to help organisations adopt and excel with Lisp.
+              Got an idea you want to explore? Lisp's interactive development style 
+              is perfect for rapid prototyping and experimentation.
             </p>
-            <ul class="service-features">
-              <li>Team training workshops</li>
-              <li>Architecture consulting</li>
-              <li>Code review &amp; mentoring</li>
-              <li>Best practices guidance</li>
-            </ul>
-          </div>
-
-          <div class="service-card">
-            <div class="service-header">
-              <span class="service-icon">🔄</span>
-              <h3>Migration &amp; Integration</h3>
-            </div>
-            <p>
-              Seamlessly integrate Common Lisp into your existing infrastructure or 
-              migrate legacy systems to modern Lisp-based architectures.
-            </p>
-            <ul class="service-features">
-              <li>System integration</li>
-              <li>Legacy modernisation</li>
-              <li>API development</li>
-              <li>Interoperability solutions</li>
-            </ul>
           </div>
         </div>
       </section>
 
       <section class="process-section">
-        <h2>Our Process</h2>
+        <h2>How I Work</h2>
         <div class="process-steps">
           <div class="process-step">
             <div class="step-number">1</div>
-            <h3>Discovery</h3>
-            <p>We dive deep into your problem domain, understanding requirements and constraints.</p>
+            <h3>Conversation</h3>
+            <p>We chat about your project, what you're trying to achieve, and whether Lisp is a good fit.</p>
           </div>
           <div class="process-step">
             <div class="step-number">2</div>
-            <h3>Design</h3>
-            <p>Architect elegant solutions using the full power of Common Lisp's abstractions.</p>
+            <h3>Proposal</h3>
+            <p>If it's a good match, I'll put together a clear scope and timeline.</p>
           </div>
           <div class="process-step">
             <div class="step-number">3</div>
-            <h3>Develop</h3>
-            <p>Iterative, REPL-driven development with continuous feedback and refinement.</p>
+            <h3>Build</h3>
+            <p>Iterative development with regular check-ins so you can see progress.</p>
           </div>
           <div class="process-step">
             <div class="step-number">4</div>
-            <h3>Deploy</h3>
-            <p>Robust deployment with comprehensive testing and documentation.</p>
+            <h3>Deliver</h3>
+            <p>Clean, documented code that you can understand and maintain.</p>
           </div>
         </div>
       </section>
 
       <section class="cta-section">
-        <h2>Ready to Get Started?</h2>
-        <p>Tell us about your project and let's explore how we can help.</p>
-        <a href="#" @href="parenworks/contact" class="btn btn-primary">Request a Consultation</a>
+        <h2>Have a Project in Mind?</h2>
+        <p>I'd love to hear about it. No obligation, just a friendly chat.</p>
+        <a href="#" @href="parenworks/contact" class="btn btn-primary">Get in Touch</a>
       </section>
     </main>
     
