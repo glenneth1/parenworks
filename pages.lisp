@@ -16,6 +16,25 @@
 (define-page contact "parenworks/contact" (:clip "contact.ctml")
   (r-clip:process T))
 
+;;; Contact Form API Endpoint
+(define-api parenworks/contact/submit (name email message) ()
+  "Handle contact form submission."
+  (cond
+    ((or (null name) (string= name ""))
+     (error 'api-error :message "Name is required"))
+    ((or (null email) (string= email ""))
+     (error 'api-error :message "Email is required"))
+    ((or (null message) (string= message ""))
+     (error 'api-error :message "Message is required"))
+    (t
+     (handler-case
+         (progn
+           (send-contact-form-email name email message)
+           (api-output "success" "Thank you for your message! I'll get back to you soon."))
+       (error (e)
+         (format t "~&Contact form error: ~A~%" e)
+         (error 'api-error :message "Failed to send message. Please try again later."))))))
+
 ;;; Route to make the site accessible at parenworks.systems
 ;;; Radiance parses parenworks.systems as domains ("systems" "parenworks")
 ;;; We need to map this to the parenworks module subdomain

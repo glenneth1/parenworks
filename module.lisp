@@ -3,8 +3,12 @@
 (define-module #:parenworks
   (:use #:cl #:radiance)
   (:export #:*port*
+           #:*resend-api-key*
+           #:*contact-email*
            #:compile-stylesheets
-           #:compile-scripts))
+           #:compile-scripts
+           #:load-resend-api-key
+           #:send-contact-form-email))
 
 (in-package #:parenworks)
 
@@ -29,3 +33,4 @@
 
 (compile-stylesheets)
 (compile-scripts)
+(load-resend-api-key)

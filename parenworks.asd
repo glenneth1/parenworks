@@ -8,8 +8,11 @@
   :defsystem-depends-on (:radiance)
   :class "radiance:virtual-module"
   :components ((:file "module")
-               (:file "pages" :depends-on ("module")))
+               (:file "email" :depends-on ("module"))
+               (:file "pages" :depends-on ("module" "email")))
   :depends-on (:r-clip
                :lass
                :parenscript
+               :drakma
+               :babel
                (:interface :server)))

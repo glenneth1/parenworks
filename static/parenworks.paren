@@ -26,25 +26,59 @@
                             (chain target (scroll-into-view
                                            (create :behavior "smooth")))))))))))))
 
-;;; Form validation
-(defun validate-contact-form (form)
-  (let ((email (chain form (query-selector "input[type='email']")))
-        (message (chain form (query-selector "textarea"))))
-    (and (chain email value length)
-         (chain message value length))))
+;;; Show form status message
+(defun show-status (message is-error)
+  (let ((status-div (chain document (get-element-by-id "form-status"))))
+    (when status-div
+      (setf (chain status-div inner-text) message)
+      (setf (chain status-div style display) "block")
+      (setf (chain status-div class-name)
+            (if is-error "form-status error" "form-status success")))))
+
+;;; Submit contact form via API
+(defun submit-contact-form (form)
+  (let ((name-val (chain (chain form (query-selector "#name")) value))
+        (email-val (chain (chain form (query-selector "#email")) value))
+        (message-val (chain (chain form (query-selector "#message")) value))
+        (btn (chain document (get-element-by-id "submit-btn"))))
+    (setf (chain btn disabled) t)
+    (setf (chain btn inner-text) "Sending...")
+    (chain (fetch "/api/parenworks/contact/submit"
+                  (create :method "POST"
+                          :headers (create "Content-Type" "application/x-www-form-urlencoded")
+                          :body (+ "name=" (encode-u-r-i-component name-val)
+                                   "&email=" (encode-u-r-i-component email-val)
+                                   "&message=" (encode-u-r-i-component message-val))))
+           (then (lambda (response)
+                   (chain response (json))))
+           (then (lambda (data)
+                   (if (chain data error)
+                       (progn
+                         (show-status (or (chain data message) "Failed to send message") t)
+                         (setf (chain btn disabled) nil)
+                         (setf (chain btn inner-h-t-m-l) "<span class=\"code-inline\">(send-message)</span>"))
+                       (progn
+                         (show-status "Thank you! I'll get back to you soon." nil)
+                         (chain form (reset))
+                         (setf (chain btn disabled) nil)
+                         (setf (chain btn inner-h-t-m-l) "<span class=\"code-inline\">(send-message)</span>")))))
+           (catch (lambda (err)
+                    (chain console (log "Error:" err))
+                    (show-status "Failed to send message. Please try again." t)
+                    (setf (chain btn disabled) nil)
+                    (setf (chain btn inner-h-t-m-l) "<span class=\"code-inline\">(send-message)</span>"))))))
 
 ;;; Initialize on DOM ready
 (defun init ()
   (init-smooth-scroll)
-  (let ((contact-form (chain document (query-selector ".contact-form"))))
+  (let ((contact-form (chain document (get-element-by-id "contact-form"))))
     (when contact-form
       (chain contact-form
              (add-event-listener
               "submit"
               (lambda (e)
-                (unless (validate-contact-form contact-form)
-                  (chain e (prevent-default))
-                  (chain console (log "Please fill in all required fields")))))))))
+                (chain e (prevent-default))
+                (submit-contact-form contact-form)))))))
 
 ;;; Run init when DOM is ready
 (if (= (chain document ready-state) "loading")
