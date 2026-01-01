@@ -30,7 +30,7 @@
      (handler-case
          (progn
            (send-contact-form-email name email message)
-           (api-output "success" "Thank you for your message! I'll get back to you soon."))
+           (api-output :status "success" :message "Thank you for your message! I'll get back to you soon."))
        (error (e)
          (format t "~&Contact form error: ~A~%" e)
          (error 'api-error :message "Failed to send message. Please try again later."))))))
