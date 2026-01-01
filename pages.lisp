@@ -28,8 +28,8 @@
      (error 'api-error :message "Message is required"))
     (t
      (send-contact-form-email name email message)
-     `((:status . "success") 
-       (:message . "Thank you for your message! I'll get back to you soon.")))))
+     (setf (content-type *response*) "application/json")
+     "{\"status\":\"success\",\"message\":\"Thank you for your message! I'll get back to you soon.\"}"))))
 
 ;;; Route to make the site accessible at parenworks.systems
 ;;; Radiance parses parenworks.systems as domains ("systems" "parenworks")
