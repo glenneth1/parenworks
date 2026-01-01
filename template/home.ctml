@@ -13,14 +13,14 @@
   <body>
     <nav class="navbar">
       <div class="nav-container">
-        <a href="#" @href="parenworks/" class="logo">
+        <a href="/" class="logo">
           <span class="paren">(</span>ParenWorks<span class="paren">)</span>
         </a>
         <ul class="nav-links">
-          <li><a href="#" @href="parenworks/" class="active">Home</a></li>
-          <li><a href="#" @href="parenworks/about">About</a></li>
-          <li><a href="#" @href="parenworks/services">Services</a></li>
-          <li><a href="#" @href="parenworks/contact">Contact</a></li>
+          <li><a href="/" class="active">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/contact">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -38,8 +38,8 @@
             for complex systems development challenges.
           </p>
           <div class="hero-cta">
-            <a href="#" @href="parenworks/services" class="btn btn-primary">Our Services</a>
-            <a href="#" @href="parenworks/contact" class="btn btn-secondary">Get in Touch</a>
+            <a href="/services" class="btn btn-primary">Our Services</a>
+            <a href="/contact" class="btn btn-secondary">Get in Touch</a>
           </div>
         </div>
         <div class="hero-visual">
@@ -83,7 +83,7 @@
       <section class="cta-section">
         <h2>Ready to Innovate?</h2>
         <p>Let's discuss how Common Lisp can transform your next project.</p>
-        <a href="#" @href="parenworks/contact" class="btn btn-primary">Start a Conversation</a>
+        <a href="/contact" class="btn btn-primary">Start a Conversation</a>
       </section>
     </main>
     
@@ -94,10 +94,10 @@
           <p>Innovative Common Lisp Solutions</p>
         </div>
         <div class="footer-links">
-          <a href="#" @href="parenworks/">Home</a>
-          <a href="#" @href="parenworks/about">About</a>
-          <a href="#" @href="parenworks/services">Services</a>
-          <a href="#" @href="parenworks/contact">Contact</a>
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+          <a href="/services">Services</a>
+          <a href="/contact">Contact</a>
         </div>
         <div class="footer-copy">
           <p>&copy; 2026 ParenWorks Systems. All rights reserved.</p>
