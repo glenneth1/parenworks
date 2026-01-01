@@ -1,0 +1,19 @@
+# Compiled Lisp files
+*.fasl
+*.fas
+*.lib
+*.lx64fsl
+
+# Editor backups
+*~
+\#*\#
+.#*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Generated files (these are compiled from .lass and .paren)
+# Uncomment if you want to track generated files
+# static/parenworks.css
+# static/parenworks.js

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ParenWorks Systems - Common Lisp Solutions</title>
+    <meta name="description" content="ParenWorks Systems - Innovative Common Lisp Solutions for Complex Problems" />
+    <link rel="stylesheet" type="text/css" href="../static/parenworks.css" @href="/static/parenworks/parenworks.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#" @href="parenworks/" class="logo">
+          <span class="paren">(</span>ParenWorks<span class="paren">)</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#" @href="parenworks/" class="active">Home</a></li>
+          <li><a href="#" @href="parenworks/about">About</a></li>
+          <li><a href="#" @href="parenworks/services">Services</a></li>
+          <li><a href="#" @href="parenworks/contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>
+            <span class="code-accent">(</span>defun<span class="code-accent"> solve-problems </span>()
+            <br />
+            <span class="indent">"Innovative Common Lisp Solutions"</span><span class="code-accent">)</span>
+          </h1>
+          <p class="hero-subtitle">
+            We harness the power of Common Lisp to build robust, elegant solutions 
+            for complex systems development challenges.
+          </p>
+          <div class="hero-cta">
+            <a href="#" @href="parenworks/services" class="btn btn-primary">Our Services</a>
+            <a href="#" @href="parenworks/contact" class="btn btn-secondary">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <pre class="code-block"><code><span class="comment">;;; The ParenWorks way</span>
+<span class="keyword">(defpackage</span> <span class="symbol">#:your-solution</span>
+  <span class="keyword">(:use</span> <span class="symbol">#:cl</span> <span class="symbol">#:innovation</span><span class="keyword">))</span>
+
+<span class="keyword">(defun</span> <span class="function">transform</span> (problem)
+  <span class="string">"Turn complexity into elegance."</span>
+  <span class="keyword">(loop</span> <span class="keyword">for</span> challenge <span class="keyword">in</span> problem
+        <span class="keyword">collect</span> (innovate challenge)<span class="keyword">))</span></code></pre>
+        </div>
+      </section>
+
+      <section class="features">
+        <h2>Why Common Lisp?</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">λ</div>
+            <h3>Expressive Power</h3>
+            <p>Common Lisp's macro system and dynamic nature allow us to create domain-specific solutions that map directly to your problem space.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">∞</div>
+            <h3>Battle-Tested</h3>
+            <p>With over 60 years of evolution, Lisp has proven itself in AI, aerospace, finance, and countless mission-critical systems.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Rapid Development</h3>
+            <p>Interactive development with REPL-driven workflows means faster iteration, immediate feedback, and shorter time to market.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔧</div>
+            <h3>Maintainability</h3>
+            <p>Clean, self-documenting code with powerful abstraction capabilities ensures your systems remain maintainable for decades.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <h2>Ready to Innovate?</h2>
+        <p>Let's discuss how Common Lisp can transform your next project.</p>
+        <a href="#" @href="parenworks/contact" class="btn btn-primary">Start a Conversation</a>
+      </section>
+    </main>
+    
+    <footer>
+      <div class="footer-container">
+        <div class="footer-brand">
+          <span class="paren">(</span>ParenWorks<span class="paren">)</span>
+          <p>Innovative Common Lisp Solutions</p>
+        </div>
+        <div class="footer-links">
+          <a href="#" @href="parenworks/">Home</a>
+          <a href="#" @href="parenworks/about">About</a>
+          <a href="#" @href="parenworks/services">Services</a>
+          <a href="#" @href="parenworks/contact">Contact</a>
+        </div>
+        <div class="footer-copy">
+          <p>&copy; 2026 ParenWorks Systems. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="../static/parenworks.js" @src="/static/parenworks/parenworks.js"></script>
+  </body>
+</html>

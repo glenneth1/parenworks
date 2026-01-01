@@ -1,0 +1,15 @@
+[Unit]
+Description=ParenWorks Systems Website (Radiance/Common Lisp)
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/parenworks
+ExecStart=/usr/bin/sbcl --load /root/quicklisp/setup.lisp --load /opt/parenworks/start.lisp --eval "(loop (sleep 3600))"
+ExecStop=/usr/bin/sbcl --eval "(radiance:shutdown)" --eval "(quit)"
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

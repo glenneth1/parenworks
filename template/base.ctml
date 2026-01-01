@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><c:splice lquery="(text title)">ParenWorks Systems</c:splice></title>
+    <meta name="description" content="ParenWorks Systems - Innovative Common Lisp Solutions for Complex Problems" />
+    <link rel="stylesheet" type="text/css" href="../static/parenworks.css" @href="/static/parenworks/parenworks.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#" @href="parenworks/" class="logo">
+          <span class="paren">(</span>ParenWorks<span class="paren">)</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#" @href="parenworks/">Home</a></li>
+          <li><a href="#" @href="parenworks/about">About</a></li>
+          <li><a href="#" @href="parenworks/services">Services</a></li>
+          <li><a href="#" @href="parenworks/contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <main>
+      <c:splice lquery="(html content)" />
+    </main>
+    
+    <footer>
+      <div class="footer-container">
+        <div class="footer-brand">
+          <span class="paren">(</span>ParenWorks<span class="paren">)</span>
+          <p>Innovative Common Lisp Solutions</p>
+        </div>
+        <div class="footer-links">
+          <a href="#" @href="parenworks/">Home</a>
+          <a href="#" @href="parenworks/about">About</a>
+          <a href="#" @href="parenworks/services">Services</a>
+          <a href="#" @href="parenworks/contact">Contact</a>
+        </div>
+        <div class="footer-copy">
+          <p>&copy; 2026 ParenWorks Systems. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

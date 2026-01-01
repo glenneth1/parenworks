@@ -1,0 +1,52 @@
+(in-package #:parenscript)
+
+;;;; ParenWorks Systems - Parenscript
+;;;; This file is compiled to JavaScript
+
+;;; Mobile navigation toggle
+(defun toggle-mobile-nav ()
+  (let ((nav (chain document (query-selector ".nav-links"))))
+    (when nav
+      (chain nav class-list (toggle "active")))))
+
+;;; Smooth scroll for anchor links
+(defun init-smooth-scroll ()
+  (let ((links (chain document (query-selector-all "a[href^='#']"))))
+    (chain links
+           (for-each
+            (lambda (link)
+              (chain link
+                     (add-event-listener
+                      "click"
+                      (lambda (e)
+                        (let* ((href (chain link (get-attribute "href")))
+                               (target (chain document (query-selector href))))
+                          (when target
+                            (chain e (prevent-default))
+                            (chain target (scroll-into-view
+                                           (create :behavior "smooth")))))))))))))
+
+;;; Form validation
+(defun validate-contact-form (form)
+  (let ((email (chain form (query-selector "input[type='email']")))
+        (message (chain form (query-selector "textarea"))))
+    (and (chain email value length)
+         (chain message value length))))
+
+;;; Initialize on DOM ready
+(defun init ()
+  (init-smooth-scroll)
+  (let ((contact-form (chain document (query-selector ".contact-form"))))
+    (when contact-form
+      (chain contact-form
+             (add-event-listener
+              "submit"
+              (lambda (e)
+                (unless (validate-contact-form contact-form)
+                  (chain e (prevent-default))
+                  (chain console (log "Please fill in all required fields")))))))))
+
+;;; Run init when DOM is ready
+(if (= (chain document ready-state) "loading")
+    (chain document (add-event-listener "DOMContentLoaded" init))
+    (init))

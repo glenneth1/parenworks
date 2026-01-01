@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - ParenWorks Systems</title>
+    <meta name="description" content="Get in touch with ParenWorks Systems for your Common Lisp development needs" />
+    <link rel="stylesheet" type="text/css" href="../static/parenworks.css" @href="/static/parenworks/parenworks.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#" @href="parenworks/" class="logo">
+          <span class="paren">(</span>ParenWorks<span class="paren">)</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#" @href="parenworks/">Home</a></li>
+          <li><a href="#" @href="parenworks/about">About</a></li>
+          <li><a href="#" @href="parenworks/services">Services</a></li>
+          <li><a href="#" @href="parenworks/contact" class="active">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <main>
+      <section class="page-header">
+        <h1>Contact Us</h1>
+        <p class="page-subtitle">Let's discuss your next project</p>
+      </section>
+
+      <section class="contact-content">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <p>
+              Whether you have a specific project in mind or just want to explore how 
+              Common Lisp can benefit your organisation, we'd love to hear from you.
+            </p>
+            
+            <div class="contact-methods">
+              <div class="contact-method">
+                <span class="contact-icon">📧</span>
+                <div>
+                  <h3>Email</h3>
+                  <p><a href="mailto:hello@parenworks.systems">hello@parenworks.systems</a></p>
+                </div>
+              </div>
+              
+              <div class="contact-method">
+                <span class="contact-icon">💬</span>
+                <div>
+                  <h3>IRC</h3>
+                  <p>#parenworks on Libera.Chat</p>
+                </div>
+              </div>
+              
+              <div class="contact-method">
+                <span class="contact-icon">🐙</span>
+                <div>
+                  <h3>GitHub</h3>
+                  <p><a href="https://github.com/parenworks" target="_blank" rel="noopener">github.com/parenworks</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="response-time">
+              <pre class="code-block small"><code><span class="keyword">(defvar</span> <span class="symbol">*response-time*</span>
+  <span class="string">"Usually within 24 hours"</span><span class="keyword">)</span></code></pre>
+            </div>
+          </div>
+
+          <div class="contact-form-container">
+            <h2>Send a Message</h2>
+            <form class="contact-form" method="post" action="#">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required="required" placeholder="Your name" />
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required="required" placeholder="your@email.com" />
+              </div>
+              
+              <div class="form-group">
+                <label for="company">Company <span class="optional">(optional)</span></label>
+                <input type="text" id="company" name="company" placeholder="Your company" />
+              </div>
+              
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject" required="required">
+                  <option value="">Select a topic...</option>
+                  <option value="project">New Project Inquiry</option>
+                  <option value="consulting">Consulting Services</option>
+                  <option value="training">Training &amp; Workshops</option>
+                  <option value="partnership">Partnership Opportunity</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required="required" placeholder="Tell us about your project or question..."></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-primary btn-full">
+                <span class="code-inline">(send-message)</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <h3>Why should I choose Common Lisp for my project?</h3>
+            <p>Common Lisp offers unmatched flexibility, powerful abstractions, and a proven track record in complex systems. It's particularly well-suited for AI, DSLs, and systems requiring long-term maintainability.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Can you integrate with our existing systems?</h3>
+            <p>Absolutely. Common Lisp has excellent FFI capabilities and we have extensive experience integrating with C, Python, Java, and various databases and APIs.</p>
+          </div>
+          <div class="faq-item">
+            <h3>What's your typical project timeline?</h3>
+            <p>It varies by scope, but our REPL-driven development approach typically delivers working prototypes faster than traditional methods. We'll provide detailed estimates after our initial consultation.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Do you offer ongoing support?</h3>
+            <p>Yes, we offer maintenance and support packages for all our projects. We believe in building long-term relationships with our clients.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <footer>
+      <div class="footer-container">
+        <div class="footer-brand">
+          <span class="paren">(</span>ParenWorks<span class="paren">)</span>
+          <p>Innovative Common Lisp Solutions</p>
+        </div>
+        <div class="footer-links">
+          <a href="#" @href="parenworks/">Home</a>
+          <a href="#" @href="parenworks/about">About</a>
+          <a href="#" @href="parenworks/services">Services</a>
+          <a href="#" @href="parenworks/contact">Contact</a>
+        </div>
+        <div class="footer-copy">
+          <p>&copy; 2026 ParenWorks Systems. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="../static/parenworks.js" @src="/static/parenworks/parenworks.js"></script>
+  </body>
+</html>
