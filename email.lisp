@@ -8,8 +8,8 @@
 (defvar *contact-email* "hello@parenworks.systems"
   "Email address to receive contact form submissions.")
 
-(defvar *from-email* "contact@send.parenworks.systems"
-  "Email address to send from (must be verified in Resend).")
+(defvar *from-email* "ParenWorks <hello@parenworks.systems>"
+  "Email address to send from (verified in Resend).")
 
 (defun load-resend-api-key ()
   "Load the Resend API key from the secrets file."
