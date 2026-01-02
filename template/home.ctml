@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ParenWorks Systems - Common Lisp Solutions</title>
     <meta name="description" content="ParenWorks Systems - Innovative Common Lisp Solutions for Complex Problems" />
+    <link rel="icon" type="image/svg+xml" href="../static/favicon.svg" @href="/static/parenworks/favicon.svg" />
     <link rel="stylesheet" type="text/css" href="../static/parenworks.css" @href="/static/parenworks/parenworks.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
