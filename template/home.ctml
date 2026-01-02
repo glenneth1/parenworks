@@ -34,11 +34,11 @@
             <span class="indent">"Innovative Common Lisp Solutions"</span><span class="code-accent">)</span>
           </h1>
           <p class="hero-subtitle">
-            We harness the power of Common Lisp to build robust, elegant solutions 
+            I harness the power of Common Lisp to build robust, elegant solutions 
             for complex systems development challenges.
           </p>
           <div class="hero-cta">
-            <a href="/services" class="btn btn-primary">Our Services</a>
+            <a href="/services" class="btn btn-primary">My Services</a>
             <a href="/contact" class="btn btn-secondary">Get in Touch</a>
           </div>
         </div>
@@ -60,7 +60,7 @@
           <div class="feature-card">
             <div class="feature-icon">λ</div>
             <h3>Expressive Power</h3>
-            <p>Common Lisp's macro system and dynamic nature allow us to create domain-specific solutions that map directly to your problem space.</p>
+            <p>Common Lisp's macro system and dynamic nature allows me to create domain-specific solutions that map directly to your problem space.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">∞</div>

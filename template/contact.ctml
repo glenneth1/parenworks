@@ -27,7 +27,7 @@
     
     <main>
       <section class="page-header">
-        <h1>Contact Us</h1>
+        <h1>Contact Me</h1>
         <p class="page-subtitle">Let's discuss your next project</p>
       </section>
 
@@ -37,7 +37,7 @@
             <h2>Get in Touch</h2>
             <p>
               Whether you have a specific project in mind or just want to explore how 
-              Common Lisp can benefit your organisation, we'd love to hear from you.
+              Common Lisp can benefit your organisation, I'd love to hear from you.
             </p>
             
             <div class="contact-methods">
@@ -108,15 +108,15 @@
           </div>
           <div class="faq-item">
             <h3>Can you integrate with our existing systems?</h3>
-            <p>Absolutely. Common Lisp has excellent FFI capabilities and we have extensive experience integrating with C, Python, Java, and various databases and APIs.</p>
+            <p>Absolutely. Common Lisp has excellent FFI capabilities and I have extensive experience integrating with C, Python, Java, and various databases and APIs.</p>
           </div>
           <div class="faq-item">
             <h3>What's your typical project timeline?</h3>
-            <p>It varies by scope, but our REPL-driven development approach typically delivers working prototypes faster than traditional methods. We'll provide detailed estimates after our initial consultation.</p>
+            <p>It varies by scope, but my REPL-driven development approach typically delivers working prototypes faster than traditional methods. I'll provide detailed estimates after our initial consultation.</p>
           </div>
           <div class="faq-item">
             <h3>Do you offer ongoing support?</h3>
-            <p>Yes, we offer maintenance and support packages for all our projects. We believe in building long-term relationships with our clients.</p>
+            <p>Yes, I offer maintenance and support packages for all my projects. I believe in building long-term relationships with my clients.</p>
           </div>
         </div>
       </section>

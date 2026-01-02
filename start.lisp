@@ -10,8 +10,8 @@
 (in-package #:cl-user)
 
 ;;; Default port (can be overridden before loading this file)
-(defvar *parenworks-port* 3000
-  "The port on which the ParenWorks website runs. Default is 3000.")
+(defvar *parenworks-port* 3001
+  "The port on which the ParenWorks website runs. Default is 3001 for dev, 3000 for production.")
 
 ;;; Ensure Quicklisp is available
 (unless (find-package :quicklisp)

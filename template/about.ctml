@@ -33,43 +33,43 @@
 
       <section class="about-content">
         <div class="about-section">
-          <h2>Our Mission</h2>
+          <h2>My Mission</h2>
           <p>
-            At ParenWorks Systems, we believe that the right tools make all the difference. 
-            Common Lisp, with its unparalleled expressiveness and flexibility, is our tool of choice 
+            At ParenWorks Systems, I believe that the right tools make all the difference. 
+            Common Lisp, with its unparalleled expressiveness and flexibility, is my tool of choice 
             for tackling the most challenging systems development problems.
           </p>
           <p>
-            We specialise in finding elegant solutions to complex problems, leveraging decades of 
+            I specialise in finding elegant solutions to complex problems, leveraging decades of 
             Lisp wisdom combined with modern software engineering practices to deliver systems 
             that are not just functional, but truly exceptional.
           </p>
         </div>
 
         <div class="about-section">
-          <h2>Our Philosophy</h2>
+          <h2>My Philosophy</h2>
           <div class="philosophy-grid">
             <div class="philosophy-item">
               <h3><span class="code-inline">(simplicity)</span></h3>
-              <p>Complex problems deserve simple, elegant solutions. We cut through accidental complexity to reveal the essential nature of your challenges.</p>
+              <p>Complex problems deserve simple, elegant solutions. I cut through accidental complexity to reveal the essential nature of your challenges.</p>
             </div>
             <div class="philosophy-item">
               <h3><span class="code-inline">(innovation)</span></h3>
-              <p>We don't just follow best practices—we create them. Common Lisp's macro system lets us build the perfect abstractions for each unique problem.</p>
+              <p>I don't just follow best practices—I create them. Common Lisp's macro system lets me build the perfect abstractions for each unique problem.</p>
             </div>
             <div class="philosophy-item">
               <h3><span class="code-inline">(reliability)</span></h3>
-              <p>Our solutions are built to last. We write code that's not just correct today, but maintainable and extensible for years to come.</p>
+              <p>My solutions are built to last. I write code that's not just correct today, but maintainable and extensible for years to come.</p>
             </div>
             <div class="philosophy-item">
               <h3><span class="code-inline">(collaboration)</span></h3>
-              <p>We work closely with our clients, treating each project as a partnership. Your domain expertise combined with our technical skills creates the best outcomes.</p>
+              <p>I work closely with my clients, treating each project as a partnership. Your domain expertise combined with my technical skills creates the best outcomes.</p>
             </div>
           </div>
         </div>
 
         <div class="about-section">
-          <h2>Why We Choose Common Lisp</h2>
+          <h2>Why I Choose Common Lisp</h2>
           <div class="lisp-reasons">
             <div class="reason">
               <h4>The Original AI Language</h4>
@@ -77,11 +77,11 @@
             </div>
             <div class="reason">
               <h4>Unmatched Flexibility</h4>
-              <p>The macro system allows us to extend the language itself, creating domain-specific languages that speak directly to your problem domain.</p>
+              <p>The macro system allows me to extend the language itself, creating domain-specific languages that speak directly to your problem domain.</p>
             </div>
             <div class="reason">
               <h4>Interactive Development</h4>
-              <p>REPL-driven development means we can explore, test, and refine solutions in real-time, dramatically accelerating the development cycle.</p>
+              <p>REPL-driven development means I can explore, test, and refine solutions in real-time, dramatically accelerating the development cycle.</p>
             </div>
             <div class="reason">
               <h4>Proven Track Record</h4>
@@ -93,8 +93,8 @@
 
       <section class="cta-section">
         <h2>Let's Build Something Great</h2>
-        <p>Discover how our expertise can transform your next project.</p>
-        <a href="/contact" class="btn btn-primary">Contact Us</a>
+        <p>Discover how my expertise can transform your next project.</p>
+        <a href="/contact" class="btn btn-primary">Contact Me</a>
       </section>
     </main>
     

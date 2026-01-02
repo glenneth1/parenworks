@@ -14,6 +14,5 @@
 Thumbs.db
 
 # Generated files (these are compiled from .lass and .paren)
-# Uncomment if you want to track generated files
-# static/parenworks.css
-# static/parenworks.js
+static/parenworks.css
+static/parenworks.js

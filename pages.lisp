@@ -41,7 +41,8 @@
     (t
      (send-contact-form-email name email message)
      (setf (content-type *response*) "application/json")
-     "{\"status\":\"success\",\"message\":\"Thank you for your message! I'll get back to you soon.\"}"))))
+     "{\"status\":\"success\",\"message\":\"Thank you for your message! I'll get back to you soon.\"}")))
+
 
 ;;; Route to make the site accessible at parenworks.systems
 ;;; When parenworks.systems is in the :domains config, Radiance recognizes it
